@@ -4,3 +4,38 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  height: 100vh;
+  background-color: #B2B2B4;
+}
+
+.btn {
+  width: 120px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  transition: all 0.3s;
+}
+
+.option-btn {
+  background-color: #BB9799;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.option-btn:hover {
+  opacity: 0.8;
+  border-right: 4px solid #CFAA9E;
+}
+
+.option-img {
+  width: 80px;
+}
