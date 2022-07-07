@@ -41,7 +41,7 @@ $(document).ready(function () {
     var $button = $(
       "<button data-id=" +
         element.id +
-        " class='btn option-btn'><img class='option-img' src='/assets/img/icons/" +
+        " class='btn option-btn'><img class='option-img' src='./assets/img/icons/" +
         element.id +
         ".png'></button>"
     );
@@ -55,7 +55,7 @@ $(document).ready(function () {
         var $imgChild = $("<img class='option-img'>");
         $imgChild.attr(
           "src",
-          "/assets/img/" + element.group + "/" + option.num + ".png"
+          "./assets/img/" + element.group + "/" + option.num + ".png"
         );
         $buttonChild.append($imgChild);
         $(".option-child_wrap").append($buttonChild);
