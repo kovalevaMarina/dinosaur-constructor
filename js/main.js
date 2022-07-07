@@ -80,5 +80,6 @@ $(document).ready(function () {
 
   $buttonClear.on("click", function () {
     $(".scene").children().remove();
+    $(".option-child_wrap").children().remove();
   });
 });
