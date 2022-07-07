@@ -60,9 +60,17 @@ button {
   transform: scale(1.2);
 }
 
+.button-clear {
+  align-self: flex-start;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #BB9799;
+}
+
 .scene-wrap {
   display: flex;
-  width: 800px;
+  width: 873px;
   order: 1;
   background-color: #ffffff;
   padding: 22px;
@@ -72,9 +80,121 @@ button {
 .scene {
   border: 2px solid black;
   width: 642px;
+  position: relative;
 }
+
+.scene .active {
+  position: absolute;
+} 
 
 .option-child_wrap {
   position: absolute;
   left: 148px;
+}
+
+.body-1 {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.eyes-2 {
+  position: absolute;
+  z-index: 3;
+  width: 4%;
+  top: 118px;
+  left: 54px;
+}
+
+.head-3 {
+  position: absolute;
+  z-index: 4;
+  top: 82px;
+  left: 29px;
+}
+
+.head-3-2 {
+  top: 86px;
+  left: 26px;
+}
+
+.head-3-3 {
+  top: 62px;
+}
+
+.mouth-4 {
+  position: absolute;
+  z-index: 3;
+  width: 7%;
+  top: 140px;
+  left: 35px;
+}
+
+.mouth-4-2 {
+  left: 39px;
+  top: 138px;
+}
+
+.mouth-4-3 {
+  top: 131px;
+  left: 31px;
+}
+
+.spots-5 {
+  position: absolute;
+  z-index: 2;
+  width: 76%;
+  top: 159px;
+  left: 98px;
+}
+
+.spots-5-1 {
+  width: 80%;
+  top: 130px;
+  left: 86px;
+}
+
+.spots-5-2 {
+  width: 76%;
+  top: 164px;
+  left: 98px;
+}
+
+.spots-5-3 {
+  width: 80%;
+  top: 150px;
+  left: 92px;
+}
+
+.spots-5-4 {
+  width: 64%;
+  top: 213px;
+  left: 138px;
+}
+
+.scale-6 {
+  position: absolute;
+  z-index: 2;
+  width: 80%;
+  top: 106px;
+  left: 91px;
+}
+
+.scale-6-1 {
+  width: 83%;
+  top: 112px;
+  left: 79px;
+}
+
+.scale-6-2 {
+  width: 80%;
+  top: 115px;
+  left: 91px;
+}
+
+.scale-6-3 {
+  top: 119px;
 }

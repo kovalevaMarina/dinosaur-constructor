@@ -59,7 +59,26 @@ $(document).ready(function () {
         );
         $buttonChild.append($imgChild);
         $(".option-child_wrap").append($buttonChild);
+
+        $buttonChild.on("click", function () {
+          $("*[data-group=" + element.group + "]").remove();
+          var $imgChildInScene = $imgChild.clone().appendTo($(".scene"));
+          $imgChildInScene.addClass([
+            element.group + "-" + element.id,
+            element.group + "-" + element.id + "-" + option.num,
+          ]);
+          $imgChildInScene.attr("data-group", element.group);
+        });
       });
     });
+  });
+
+  // очистка поля
+  var $buttonClear = $("<button class='button-clear'></button>");
+  $buttonClear.text("Clear");
+  $(".scene-wrap").append($buttonClear);
+
+  $buttonClear.on("click", function () {
+    $(".scene").children().remove();
   });
 });
